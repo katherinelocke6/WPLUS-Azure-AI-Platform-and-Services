@@ -15,6 +15,12 @@ sql_database = os.getenv("SQL_DATABASE")
 sql_user = os.getenv("SQL_USER")
 sql_pwd = os.getenv("SQL_PWD")
 
+# Azure OpenAI endpoint URLs exceed SQL Server's 128-character sysname limit for
+# scoped-credential names, so a short fixed name is used instead of the endpoint
+# itself; both create_database_credential() and create_embedding_procedure() below
+# reference this same name.
+aoai_credential_name = "aoai_embedding_credential"
+
 
 def create_SQLMasterKey():
     """
@@ -64,7 +70,7 @@ def create_database_credential():
     )
     cursor = conn.cursor()
     sql = (
-        f"CREATE DATABASE SCOPED CREDENTIAL [{endpoint}] "
+        f"CREATE DATABASE SCOPED CREDENTIAL [{aoai_credential_name}] "
         f"WITH IDENTITY = 'HTTPEndpointHeaders', "
         f"SECRET = '{{\"api-key\": \"{api_key}\"}}';"
     )
@@ -90,7 +96,9 @@ def create_embedding_procedure():
     cursor = conn.cursor()
     
     url = f"{endpoint.rstrip('/')}/openai/deployments/{deployment}/embeddings?api-version=2024-02-01"
-    credential = f"[{endpoint.rstrip('/')}]"
+    # Use the same short, fixed credential name created in create_database_credential()
+    # instead of the endpoint URL, which exceeds SQL Server's 128-char sysname limit.
+    credential = f"[{aoai_credential_name}]"
 
     sql = """
     CREATE OR ALTER PROCEDURE [dbo].[get_embedding]

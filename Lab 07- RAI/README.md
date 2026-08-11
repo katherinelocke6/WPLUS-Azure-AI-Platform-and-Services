@@ -83,9 +83,11 @@ Configure the environment with the required tools and files:
 
 ### Manual Evaluation
 
+> **Note:** The current Foundry Evaluation page shows only **Automated evaluations**, **AI red teaming** and **Evaluator library** tabs, and no longer has a **Manual evaluations** tab. If this tab is not visible, treat this section as currently unavailable rather than a missed step, and use **Automated evaluations** for query/response dataset review instead.
+
 1. [ ] On the left side, go to the **Protect and govern** section.
 1. [ ] Select **Evaluation**.
-1. [ ] At the top, choose **Manual evaluations**.
+1. [ ] At the top, choose **Manual evaluations** (if available; see note above).
  ![Go to resource](rai_md_img/manual_eval.png)
 1. [ ] Select **New Manual Evaluation**. Under Configurations, see the options.
 1. [ ] On the right, select the model you deployed (e.g., `gpt-5.1`).
@@ -149,8 +151,7 @@ Configure the environment with the required tools and files:
 ### Moderate Text Content
 
 1. [ ] Return to the resource group, select the AI project, and launch the studio.  
-1. [ ] On the left, select **AI Services**.  
-1. [ ] On the right, choose **Content Safety**.  
+1. [ ] The unified Foundry portal no longer has an **AI Services > Content Safety** navigation item. Instead, open the separate legacy **Content Safety Studio** directly at <https://contentsafety.cognitive.azure.com/>, signing in with the same lab account.
 1. [ ] Under **Filter text content**, select **Moderate text content**.  
 1. [ ] Ensure the Azure AI Services resource is your Foundry instance.  
 1. [ ] You can test with a simple test first:  
@@ -201,7 +202,7 @@ Configure the environment with the required tools and files:
 
 ## System Message
 
-Under the Playground, go to Agents Playground by clicking on **Try the Agents Playground**. When prompted to choose AOAI resource, choose the AOAI resource that is precreated that was part of the Lab VM deployment. The instructions below givean idea of how to provide instructions to the agent before chatting with it. Step 1-5 below are informational to give an idea of how system prompt will look like.
+Under the Playground, go to Agents Playground by clicking on **Let's go** (labeled **Try the Agents Playground** in earlier versions of this lab). It may load directly into a pre-existing agent rather than prompting you to choose an AOAI resource; if so, use that agent or create a new one from there as described below. The instructions below givean idea of how to provide instructions to the agent before chatting with it. Step 1-5 below are informational to give an idea of how system prompt will look like.
 
 **1. Define the Purpose of the AI Agent**
 

@@ -17,7 +17,7 @@ You need a relational database solution (SQL DB) that also supports storing and 
 None. The database has been pre-created for you.
  
 ## Tasks
-Execute files in [SQL folder](https://github.com/Azure/WPLUS-Azure-AI-Platform-and-Services/tree/AugRelease/Vector-DB/Cosmos%20DB) in ascending order. Files are numberd 1_.... , 2_.... etc. The .sql files need to be executed in SQL Server Management Studio, which is preloaded on Desktop for you, while .py files are executed with "python file.py" - for example "python 2_LoadMovideData.py" (the previous assumes you have nagivated to the directory containing the Python file).
+Execute files in [SQL folder](https://github.com/Azure/WPLUS-Azure-AI-Platform-and-Services/tree/AugRelease/Vector-DB/Cosmos%20DB) in ascending order. Files are numberd 1_.... , 2_.... etc. The .sql files need to be executed in SQL Server Management Studio (SSMS), which you can find via the Start Menu on the lab VM (it is not pinned to the Desktop), while .py files are executed with "python file.py" - for example "python 2_LoadMovideData.py" (the previous assumes you have nagivated to the directory containing the Python file).
 
 
 # Lab: Using Vector Databases in Azure SQL Database
@@ -182,9 +182,9 @@ Execute files in [SQL folder](https://github.com/Azure/WPLUS-Azure-AI-Platform-a
 ## 16. Update the `.env` File
 1. [ ] Open `.env` in VS Code. (This file should have been renamed from .env.example - so remove the .example part if you have not already.)
 2. [ ] Populate the variables:
-   - [ ] `AZURE_OPENAI_EMBEDDING_ENDPOINT` with your Azure OpenAI endpoint
-   - [ ] `EMBEDDING_MODEL_DEPLOYMENT_NAME` for your embedding model.  This should be "text-embedding-ada-002" and was created in the PostgreSQL lab.  Review the steps in the PostgreSQL lab to deploy this model if you have not already.
-   - [ ] `AZURE_OPENAI_EMBEDDING_API_KEY` from Step 15
+   - [ ] `AZURE_OPENAI_EMBEDDING_ADA_ENDPOINT` with your Azure OpenAI endpoint
+   - [ ] `EMBEDDING_ADA_MODEL_DEPLOYMENT_NAME` for your embedding model.  This should be "text-embedding-ada-002" and was created in the PostgreSQL lab.  Review the steps in the PostgreSQL lab to deploy this model if you have not already.
+   - [ ] `AZURE_OPENAI_EMBEDDING_ADA_API_KEY` from Step 15
    - [ ] `SQL_SERVER` - full URL of your Azure SQL Server
 
 ---

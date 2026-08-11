@@ -65,7 +65,7 @@ Complete the prerequisites Lab exercises
 ![Go to project](images/modelapikey2.png)
   - The Model Name is the first box string.
 
-- [ ] The Endpoint Target URI is in the form of https://_AI-FOUNDRY-NAME_.cognitiveservices.azure.com/openai/deployments/_MODEL-DEPLOYMENT-NAME_/chat/completions?api-version=_MODEL-API-VERSION_
+- [ ] The gpt-5.1 chat model is served on the newer Responses API surface: its Endpoint Target URI is in the form of https://_AI-FOUNDRY-NAME_.cognitiveservices.azure.com/openai/responses?api-version=_MODEL-API-VERSION_ -- there is no `/deployments/_MODEL-DEPLOYMENT-NAME_/chat/completions` path segment for this model. The Model Name still comes from the separate **Deployment info** box shown above, not from the URI path.
 - [ ] Copy the last section from the URI (date) and paste into .env file as the value for MODEL_API_VERSION
 ![Go to project](images/modelapikey3.png)
 

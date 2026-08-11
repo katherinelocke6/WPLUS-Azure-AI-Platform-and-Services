@@ -78,7 +78,7 @@ This Logic App receives text input and outputs the text with PII redacted. It cr
  ![Alt text](./Images/AddTrigger.png)
  ![Alt text](./Images/RequestIsReceived.png)
 
-1. [ ] Search triggers for “When a HTTP request is received” and select it.
+1. [ ] Search triggers for “When an HTTP request is received” and select it.
 1. [ ] Under Request Body JSON Schema, add:
    
  ```json
@@ -223,7 +223,7 @@ This Logic App receives text, detects the language, and outputs the text in Engl
 
 ![Alt text](./Images/AddaTrigger2.png)
 
-1. [ ] Search triggers for “When a HTTP request is received” and select it.
+1. [ ] Search triggers for “When an HTTP request is received” and select it.
 1. [ ] Under Request Body JSON Schema, add:
 
 ```json
@@ -405,6 +405,8 @@ You will create **2 agents** using Azure AI Foundry:
 
 ### Create a Translation Agent
 
+> **Note:** When starting agent creation you may see an **Agent Deprecation Notice** dialog stating that Agents (classic) are being retired. Choose **Create agent (classic)** and confirm the legacy-agent warning to follow the steps below, which describe the classic Setup panel (rename / Instructions / Description / Actions).
+
 1. [ ] Select the Agent checkbox and rename the Agent to **EnglishTranslationAgent**.
 ![Alt text](./Images/TranslationAgent.png)
 1. [ ] In the Instructions, paste:
@@ -443,7 +445,7 @@ You will create **2 agents** using Azure AI Foundry:
 Then send all incoming messages with the personal information remoed that are not in English to the EnglishTranslation action. If the entry is already in English, return the original text unchanged. Ensure the output maintains the structure and formatting of the input data.
 
 1. [ ] Next to Actions, click **+ Add** then **Azure Logic Apps**.
-1. [ ] Select Azure Logic Apps and choose your PIIRedaction flow
+1. [ ] Select Azure Logic Apps and choose the Logic App you created for PII redaction (named `logiapp1-64013329`; it appears in the action picker as `logiapp164013329_Tool`, listed separately from `EnglishTranslation_Tool`)
 1. [ ] On the basic information screen, add:
     - [ ] **Action Description:**  
       > For any text provided, replace any sensitive or personal identifying information (PII) with *********

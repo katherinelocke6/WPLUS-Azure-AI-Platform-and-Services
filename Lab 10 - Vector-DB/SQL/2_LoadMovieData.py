@@ -27,6 +27,8 @@ cursor = conn.cursor()
 cursor.fast_executemany = True
 
 
+sql = None  # defined before the try block so a failure opening csv_path cannot
+            # mask itself behind a NameError in the except handler below
 try:
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.reader(f)

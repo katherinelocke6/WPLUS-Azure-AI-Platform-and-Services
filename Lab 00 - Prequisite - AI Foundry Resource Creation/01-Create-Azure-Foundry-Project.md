@@ -58,9 +58,9 @@ Go to +++https://portal.azure.com+++ and sign in with your Azure credentials. Th
 ![Fill in Details](images/fill_in_details_for_ai_foundry_resource.png)
 
 
-- [ ] For this exercise, we will keep all default values for all the subsequent tabs (Network, Identity, Encryption, Tags). Review the values in each tab page and Click the **Next** button until you reach the **Review + create** tab.
+- [ ] For this exercise, we will keep all default values for all the subsequent tabs (Storage, Inbound Networking, Outbound Networking). Review the values in each tab page and Click the **Next** button until you reach the **Review + create** tab.
 - [ ] Click the **Create** button
-- [ ] In less than 2 minutes your deployment should complete
+- [ ] Deployment time varies; the deployment blade can remain "in progress" for 15 minutes or more even after the underlying resources are actually ready. Verify completion by checking the resource group's **Resources** list rather than waiting on the deployment blade alone.
 
 ![Deploy](images/deployaifoundryresource.png)
 
