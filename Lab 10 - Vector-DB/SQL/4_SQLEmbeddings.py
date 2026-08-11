@@ -63,8 +63,9 @@ def create_database_credential():
         f"PWD={sql_pwd};"
     )
     cursor = conn.cursor()
+    credential_name = "https_openai_credential"
     sql = (
-        f"CREATE DATABASE SCOPED CREDENTIAL [{endpoint}] "
+        f"CREATE DATABASE SCOPED CREDENTIAL [{credential_name}] "
         f"WITH IDENTITY = 'HTTPEndpointHeaders', "
         f"SECRET = '{{\"api-key\": \"{api_key}\"}}';"
     )
@@ -90,7 +91,8 @@ def create_embedding_procedure():
     cursor = conn.cursor()
     
     url = f"{endpoint.rstrip('/')}/openai/deployments/{deployment}/embeddings?api-version=2024-02-01"
-    credential = f"[{endpoint.rstrip('/')}]"
+    credential_name = "https_openai_credential"
+    credential = f"[{credential_name}]"
 
     sql = """
     CREATE OR ALTER PROCEDURE [dbo].[get_embedding]
