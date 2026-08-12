@@ -38,7 +38,7 @@
 ### [Graph RAG](./Lab%2008%20-%20RAG-Patterns/GraphRAG/README.md)
 
 ## Lab 09 - Security
-### [Graph RAG](./Lab%2009%20-%20Security/README.md)
+### [Security](./Lab%2009%20-%20Security/README.md)
 
 ## Lab 10 - Vector DB
 ### [Cosmos DB](./Lab%2010%20-%20Vector-DB/Cosmos%20DB/Readme.md)

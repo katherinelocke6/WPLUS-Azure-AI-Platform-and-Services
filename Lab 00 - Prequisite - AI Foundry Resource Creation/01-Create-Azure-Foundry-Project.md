@@ -26,6 +26,8 @@ No pre-requisites
 ### 1. Sign in to Azure Portal
 
 Go to +++https://portal.azure.com+++ and sign in with your Azure credentials. These credentials are present on the right hand side under resources tab below **Azure Portal**.
+
+After you enter the password, Azure will prompt you for a **Temporary Access Pass (TAP)** as a mandatory second sign-in step -- this prompt cannot be skipped. The Resources tab that supplies your password also lists a separate Temporary Access Pass value; enter that value when prompted to complete sign-in.
 ![Azure Credentials](images/azurecredentials.png)
 
 ### 2. Search for "Microsoft Foundry"
