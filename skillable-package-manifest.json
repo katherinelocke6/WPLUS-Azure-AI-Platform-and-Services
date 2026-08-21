@@ -16,7 +16,8 @@
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/deployaifoundryresource.png",
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/aifoundrydeployed.png",
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/aifoundryportal.png"
-      ]
+      ],
+      "parent_heading": "Lab 00 - Pre-requisites"
     },
     {
       "order": 2,
@@ -30,7 +31,8 @@
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/usethismodel.png",
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/deploygpt4o.png",
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/msfoundry_listofmodelsdeployed.png"
-      ]
+      ],
+      "parent_heading": "Lab 00 - Pre-requisites"
     },
     {
       "order": 3,
@@ -42,7 +44,8 @@
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/gwbingaddconn.png",
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/gwbingconnected.png",
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/gwbingconnectedinlist.png"
-      ]
+      ],
+      "parent_heading": "Lab 00 - Pre-requisites"
     },
     {
       "order": 4,
@@ -54,7 +57,8 @@
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/aisearchaddconn.png",
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/aisearchconnected.png",
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/aisearchconnectedinlist.png"
-      ]
+      ],
+      "parent_heading": "Lab 00 - Pre-requisites"
     },
     {
       "order": 5,
@@ -79,7 +83,8 @@
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/sqlserver.png",
         "Lab 05 - Fine-Tuning/Advance Fine-Tuning/images/screenshot-foundry-overview-1.png",
         "Lab 05 - Fine-Tuning/Advance Fine-Tuning/images/screenshot-foundry-keys-and-endpoint.png"
-      ]
+      ],
+      "parent_heading": "Lab 00 - Pre-requisites"
     },
     {
       "order": 6,
@@ -87,19 +92,22 @@
       "source_file": "Lab 00 - Prequisite - AI Foundry Resource Creation/06-Run-requirements.md",
       "assets": [
         "Lab 00 - Prequisite - AI Foundry Resource Creation/images/py31210.png"
-      ]
+      ],
+      "parent_heading": "Lab 00 - Pre-requisites"
     },
     {
       "order": 7,
       "title": "Connection with AOAI",
       "source_file": "Lab 01 - AI-Foundry/Labs/Connection with AOAI/README.md",
-      "assets": []
+      "assets": [],
+      "parent_heading": "Lab 01 - AI Foundry"
     },
     {
       "order": 8,
       "title": "Evaluations",
       "source_file": "Lab 01 - AI-Foundry/Labs/Evaluations/README.md",
-      "assets": []
+      "assets": [],
+      "parent_heading": "Lab 01 - AI Foundry"
     },
     {
       "order": 9,
@@ -112,7 +120,8 @@
         "Lab 02 - Agents/4-bing_grounding.ipynb",
         "Lab 02 - Agents/5-agents-aisearch.ipynb",
         "Lab 02 - Agents/6-multi-agent-solution.ipynb"
-      ]
+      ],
+      "parent_heading": "Lab 02 - Agents"
     },
     {
       "order": 10,
@@ -180,7 +189,8 @@
         "Lab 03 - AI-Language/Images/RunWithLogicApps.png",
         "Lab 03 - AI-Language/Images/FinalOutputBothAgents.png",
         "Lab 03 - AI-Language/Images/FinalOutputFlowRuns.png"
-      ]
+      ],
+      "parent_heading": "Lab 03 - AI Language"
     },
     {
       "order": 11,
@@ -200,25 +210,29 @@
         "Lab 04 - AI-Vision/LabFiles/AI_vision_services_lab.ipynb",
         "Lab 04 - AI-Vision/LabFiles/AI_vision_services_lab.ipynb",
         "Lab 04 - AI-Vision/LabFiles/AI_vision_services_lab.ipynb"
-      ]
+      ],
+      "parent_heading": "Lab 04 - AI Vision"
     },
     {
       "order": 12,
       "title": "Fine Tuning",
       "source_file": "Lab 05 - Fine-Tuning/README.md",
-      "assets": []
+      "assets": [],
+      "parent_heading": "Lab 05 - Fine Tuning"
     },
     {
       "order": 13,
       "title": "Advanced Fine Tuning",
       "source_file": "Lab 05 - Fine-Tuning/Advance Fine-Tuning/README.MD",
-      "assets": []
+      "assets": [],
+      "parent_heading": "Lab 05 - Fine Tuning"
     },
     {
       "order": 14,
       "title": "Prompt Engineering",
       "source_file": "Lab 06 - Prompt Engineering/README.md",
-      "assets": []
+      "assets": [],
+      "parent_heading": "Lab 06 - Prompt Engineering"
     },
     {
       "order": 15,
@@ -233,25 +247,29 @@
         "Lab 07- RAI/rai_md_img/manual_eval.png",
         "Lab 07- RAI/rai_md_img/autoevalnewdataset.png",
         "Lab 07- RAI/rai_md_img/allfiles.png"
-      ]
+      ],
+      "parent_heading": "Lab 07 - Responsible AI"
     },
     {
       "order": 16,
       "title": "Graph RAG",
       "source_file": "Lab 08 - RAG-Patterns/GraphRAG/README.md",
-      "assets": []
+      "assets": [],
+      "parent_heading": "Lab 08 - RAG Patterns"
     },
     {
       "order": 17,
       "title": "Security",
       "source_file": "Lab 09 - Security/README.md",
-      "assets": []
+      "assets": [],
+      "parent_heading": "Lab 09 - Security"
     },
     {
       "order": 18,
       "title": "Cosmos DB",
       "source_file": "Lab 10 - Vector-DB/Cosmos DB/Readme.md",
-      "assets": []
+      "assets": [],
+      "parent_heading": "Lab 10 - Vector DB"
     },
     {
       "order": 19,
@@ -278,7 +296,8 @@
         "Lab 10 - Vector-DB/PostgreSQL/images/15_LinkToKeys.png",
         "Lab 10 - Vector-DB/PostgreSQL/images/16_GetKeys.png",
         "Lab 10 - Vector-DB/PostgreSQL/images/17_QueryOutput.png"
-      ]
+      ],
+      "parent_heading": "Lab 10 - Vector DB"
     },
     {
       "order": 20,
@@ -312,7 +331,8 @@
         "Lab 10 - Vector-DB/SQL/images/25.png",
         "Lab 10 - Vector-DB/SQL/images/26.png",
         "Lab 10 - Vector-DB/SQL/images/27.png"
-      ]
+      ],
+      "parent_heading": "Lab 10 - Vector DB"
     }
   ],
   "referenced_assets": [

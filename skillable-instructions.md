@@ -1,3 +1,6 @@
+# Lab 00 - Pre-requisites
+## 01 - Create Azure Foundry Project
+
 # Create Microsoft Foundry Project
 
 ## Introduction 
@@ -84,6 +87,9 @@ After you enter the password, Azure will prompt you for a **Temporary Access Pas
 
 
 ===
+# Lab 00 - Pre-requisites
+## 02 - Deploy Models
+
 # Deploy models into the Microsoft Foundry Project
 
 ## Introduction 
@@ -164,6 +170,9 @@ Make sure you are using the legacy Microsoft Foundry UI.
 ![List models deployed](Lab%2000%20-%20Prequisite%20-%20AI%20Foundry%20Resource%20Creation/images/msfoundry_listofmodelsdeployed.png)
 
 ===
+# Lab 00 - Pre-requisites
+## 03 - Connect to Bing Resource
+
 # Create connections to Bing Resources at Azure AI Foundry resource level
 
 ## Introduction 
@@ -220,6 +229,9 @@ No pre-requisites
 ![List models deployed](Lab%2000%20-%20Prequisite%20-%20AI%20Foundry%20Resource%20Creation/images/gwbingconnectedinlist.png)
 
 ===
+# Lab 00 - Pre-requisites
+## 04 - Connect to Azure AI Search
+
 # Create connections to Azure AI Search at AI Foundry resource level
 
 ## Introduction 
@@ -278,6 +290,9 @@ No Pre-requisites
 ![List models deployed](Lab%2000%20-%20Prequisite%20-%20AI%20Foundry%20Resource%20Creation/images/aisearchconnectedinlist.png)
 
 ===
+# Lab 00 - Pre-requisites
+## 05 - Setup - (dot)env file
+
 # Setup .env file
 
 ## Introduction
@@ -453,6 +468,9 @@ Complete the prerequisites Lab exercises
 - [ ] You should have the .env setup complete.
 
 ===
+# Lab 00 - Pre-requisites
+## 06 - Run requirements
+
 # Run requirements file to install the relevant packages
 
 ## Introduction 
@@ -486,6 +504,9 @@ No Pre-requisites
 - [ ] run the contents of the file. 
 
 ===
+# Lab 01 - AI Foundry
+## Connection with AOAI
+
 # Quick Start Guide - Azure AI Foundry
 
 ## Introduction 
@@ -644,6 +665,9 @@ Upon completing this laboratory, you will:
 After completing this laboratory, you will be prepared to advance to more specialized Azure AI Foundry labs, including advanced agent scenarios, tool integration, and multi-modal capabilities.
 
 ===
+# Lab 01 - AI Foundry
+## Evaluations
+
 # Evaluations with Azure AI Foundry
 
 ## Introduction 
@@ -768,6 +792,9 @@ Upon completing this laboratory, you will:
 After completing this laboratory, you will be prepared to implement production-ready evaluation systems for AI applications, including custom evaluators and enterprise-scale evaluation workflows.
 
 ===
+# Lab 02 - Agents
+## Agents Lab
+
 # Azure AI Agents Tutorial Collection
 
 ## Introduction 
@@ -915,6 +942,9 @@ For more examples, please visit:
 For pro-code advanced scenarios, explore the `agents-with-mcp/` directory for Model Context Protocol integration examples.
 
 ===
+# Lab 03 - AI Language
+## AI Language
+
 # AI Language Service with Agents Lab
 
 ## Introduction 
@@ -1378,6 +1408,9 @@ Then send all incoming messages with the personal information remoed that are no
  ![Alt text](Lab%2003%20-%20AI-Language/Images/FinalOutputFlowRuns.png)
 
 ===
+# Lab 04 - AI Vision
+## AI Vision
+
 # Azure AI Vision – Lab
 
 ## Introduction
@@ -1538,6 +1571,8 @@ The Video Indexer API enables you to:
 ---
 
 ===
+# Lab 05 - Fine Tuning
+
 # Fine Tuning
 
 ## Introduction 
@@ -1618,6 +1653,9 @@ Launch the Azure AI Foundry Resource created in the pre-requisites lab.
 
 
 ===
+# Lab 05 - Fine Tuning
+## Advanced Fine Tuning
+
 # Fine Tuning - Advance Lab
 
 ## Introduction
@@ -1661,6 +1699,8 @@ Navigate to the `C:/Users/Admin/Desktop/LABS/Lab 05 - Fine-Tuning/Advance Fine-T
 
 ---
 ===
+# Lab 06 - Prompt Engineering
+
 # Prompt Engineering
 
 ## Introduction 
@@ -1887,6 +1927,8 @@ Upon completing this laboratory, you will be able to:
 
 
 ===
+# Lab 07 - Responsible AI
+
 # Responsible AI
 
 ## Introduction 
@@ -2191,6 +2233,9 @@ To use Prompt Shields:
 1. [ ] Select **Run test**. The service will return the risk flag and type for each sample.
 
 ===
+# Lab 08 - RAG Patterns
+## Graph RAG
+
 # Lab 08 - RAG-Patterns - Graph RAG
 
 ## Introduction 
@@ -2396,6 +2441,9 @@ more ragtest/prompts-tuned/summarize_descriptions.txt
 ```
 
 ===
+# Lab 09 - Security
+## Security
+
 # AI Red Teaming Agent for Generative AI Applications
 
 This sample demonstrates how to use Azure AI Evaluation's `RedTeam` functionality to assess the safety and resilience of AI systems against adversarial prompt attacks.
@@ -2499,6 +2547,9 @@ After running the AI red teaming scan:
 - Learn more about how the AI Red Teaming Agent works and what it covers in our [concept documentation.](https://aka.ms/airedteamingagent-conceptdoc)
 
 ===
+# Lab 10 - Vector DB
+## Cosmos DB
+
 # Azure Cosmos DB Lab
  
 ## Introduction
@@ -2520,6 +2571,9 @@ None. The database has been pre-created for you.
 ## Tasks
 Open **Python-Samples.ipynb** and follow the steps to ingest data and run search queries.
 ===
+# Lab 10 - Vector DB
+## PostGreSQL DB
+
 # Azure PostgreSQL Lab
  
 ## Introduction
@@ -2736,6 +2790,9 @@ Now that everything is set up, you can perform a consine similarity search.  In 
 
 
 ===
+# Lab 10 - Vector DB
+## SQL DB
+
 # Azure SQL Lab
 
 ## Introduction
