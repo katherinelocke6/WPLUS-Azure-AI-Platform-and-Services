@@ -186,6 +186,7 @@ Execute files in [SQL folder](https://github.com/Azure/WPLUS-Azure-AI-Platform-a
    - [ ] `EMBEDDING_ADA_MODEL_DEPLOYMENT_NAME` for your embedding model.  This should be "text-embedding-ada-002" and was created in the PostgreSQL lab.  Review the steps in the PostgreSQL lab to deploy this model if you have not already.
    - [ ] `AZURE_OPENAI_EMBEDDING_ADA_API_KEY` from Step 15
    - [ ] `SQL_SERVER` - full URL of your Azure SQL Server
+   - [ ] `SQL_PWD` - the password for your Azure SQL Server login. Do not type or store the actual password in this document; copy it from the lab environment's provided credentials file (a `sqlcredentials.txt` file in the LABS root folder) into your `.env` file.
 
 ---
 
