@@ -5,7 +5,7 @@ This lab shows you how to use Azure SQL Database as a backend for storing and se
  
 ## Objectives
 Store and retrieve vector data.
-Perform similarity searches using PostgreSQL.
+Perform similarity searches using Azure SQL Database.
  
 ## Estimated Time
 20 minutes
@@ -17,7 +17,7 @@ You need a relational database solution (SQL DB) that also supports storing and 
 None. The database has been pre-created for you.
  
 ## Tasks
-Execute files in [SQL folder](https://github.com/Azure/WPLUS-Azure-AI-Platform-and-Services/tree/AugRelease/Vector-DB/Cosmos%20DB) in ascending order. Files are numberd 1_.... , 2_.... etc. The .sql files need to be executed in SQL Server Management Studio (SSMS), which you can find via the Start Menu on the lab VM (it is not pinned to the Desktop), while .py files are executed with "python file.py" - for example "python 2_LoadMovideData.py" (the previous assumes you have nagivated to the directory containing the Python file).
+Execute files in [SQL folder](https://github.com/Azure/WPLUS-Azure-AI-Platform-and-Services/tree/AugRelease/Lab%2010%20-%20Vector-DB/SQL) in ascending order. Files are numberd 1_.... , 2_.... etc. The .sql files need to be executed in SQL Server Management Studio (SSMS), which you can find via the Start Menu on the lab VM (it is not pinned to the Desktop), while .py files are executed with "python file.py" - for example "python 2_LoadMovideData.py" (the previous assumes you have nagivated to the directory containing the Python file).
 
 
 # Lab: Using Vector Databases in Azure SQL Database
