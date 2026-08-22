@@ -29,7 +29,7 @@ You will explore:
 
 ## Pre-requisites
 
-- Compleate pre-requisites lab
+- Complete pre-requisites lab
 - Azure subscription with access to Azure OpenAI Service and Azure AI Search
 - Environment variables configured in the `.env` file at repository root
 - Python 3.8 or higher

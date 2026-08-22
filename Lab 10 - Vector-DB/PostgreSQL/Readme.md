@@ -120,9 +120,9 @@ from books
 limit 20;
 ```
 
-4. [ ] **Open the VectoryQuery.sql Script**
+4. [ ] **Open the VectorQuery.sql Script**
    - [ ] Open a new Query Tool window to establish a new connection to PostgresSQL.  
-   - [ ] Press `Ctrl+O` and open the `VectorQuery.sql` file located at C:\Users\Admin\Desktop\LABS\Lab 10 - Vector-DB\PostgreSQL\VectoryQuery.sql
+   - [ ] Press `Ctrl+O` and open the `VectorQuery.sql` file located at C:\Users\Admin\Desktop\LABS\Lab 10 - Vector-DB\PostgreSQL\VectorQuery.sql
 
 
 ![Open Query](images/10_VectorQueryOpen.png)
