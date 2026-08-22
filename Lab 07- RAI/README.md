@@ -202,7 +202,11 @@ Configure the environment with the required tools and files:
 
 ## System Message
 
-Under the Playground, go to Agents Playground by clicking on **Let's go** (labeled **Try the Agents Playground** in earlier versions of this lab). It may load directly into a pre-existing agent rather than prompting you to choose an AOAI resource; if so, use that agent or create a new one from there as described below. The instructions below givean idea of how to provide instructions to the agent before chatting with it. Step 1-5 below are informational to give an idea of how system prompt will look like.
+Under the Playground, go to Agents Playground by clicking on **Let's go** (labeled **Try the Agents Playground** in earlier versions of this lab). It may load directly into a pre-existing agent rather than prompting you to choose an AOAI resource; if so, use that agent or create a new one from there as described below.
+
+> **Note:** If you create a new agent, an **Agent Deprecation Notice** dialog may appear first ("Agents (classic) are being phased out... we recommend creating all new agents powered by the generally available agent service"), offering **Create new agent** or **Create agent**. Choose **Create agent** to continue with the legacy flow this lab describes below (a second confirmation, **Create Legacy Agent**, may ask you to confirm). Both paths remain functional; the steps below assume the legacy **Create agent** path.
+
+The instructions below givean idea of how to provide instructions to the agent before chatting with it. Step 1-5 below are informational to give an idea of how system prompt will look like.
 
 **1. Define the Purpose of the AI Agent**
 
