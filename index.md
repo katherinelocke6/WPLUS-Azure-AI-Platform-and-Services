@@ -44,3 +44,7 @@
 ### [Cosmos DB](./Lab%2010%20-%20Vector-DB/Cosmos%20DB/Readme.md)
 ### [PostGreSQL DB](./Lab%2010%20-%20Vector-DB/PostgreSQL/Readme.md)
 ### [SQL DB](./Lab%2010%20-%20Vector-DB/SQL/Readme.md)
+
+## Optional Lab - AI Fundamentals
+### [RAG](./Optional%20Lab%20-%20AI%20Fundamentals/RAG/README.md)
+### [Semantic Kernel and AutoGen](./Optional%20Lab%20-%20AI%20Fundamentals/SK%20and%20AutoGen/README.md)
