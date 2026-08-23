@@ -69,7 +69,13 @@ Complete the prerequisites Lab exercises
 - [ ] Copy the last section from the URI (date) and paste into .env file as the value for MODEL_API_VERSION
 ![Go to project](images/modelapikey3.png)
 
-### 5. Set the values for the AZURE_OPENAI_EMBEDDING_ENDPOINT and AZURE_OPENAI_EMBEDDING_API_KEY variables
+### 5. Set the value for the PROMPT_MODEL_DEPLOYMENT_NAME variable (gpt-4o)
+
+- [ ] Click on the **gpt-4o** model deployment (created in [Deploy models into the Azure AI Foundry Project](02-Deploy-Models.md)) to get its details, the same way as above.
+- [ ] Copy the Model Name and paste into .env file as the value for `PROMPT_MODEL_DEPLOYMENT_NAME`.
+- [ ] This dedicated variable is used by **Lab 02 (Bing grounding)** and **Lab 06 (Prompt Engineering)**, because both exercises require a gpt-4o deployment rather than the shared `MODEL_DEPLOYMENT_NAME` (gpt-5.1): Grounding with Bing Search does not support GPT-5 models, and the Prompt Engineering lab's temperature examples are not supported by GPT-5-family reasoning models. All other labs continue to use `MODEL_DEPLOYMENT_NAME` unchanged.
+
+### 6. Set the values for the AZURE_OPENAI_EMBEDDING_ENDPOINT and AZURE_OPENAI_EMBEDDING_API_KEY variables
 
 - [ ] Similar steps as above. Follow for both text-embedding-3-large and text-embedding-ada-002 models
 - [ ] Click on embeddding model name to get details
@@ -80,7 +86,7 @@ Complete the prerequisites Lab exercises
 - [ ] Embedding Endpoint Target URIs use the Azure OpenAI embeddings route, for example `https://<resource>/openai/deployments/<deployment-name>/embeddings?api-version=<api-version>`. Do not use the `/chat/completions` route for an embedding model.
 - [ ] For **text-embedding-3-large**, set `EMBEDDING_MODEL_DEPLOYMENT_NAME` and `EMBEDDING_MODEL_API_VERSION`. For **text-embedding-ada-002**, set `EMBEDDING_ADA_MODEL_DEPLOYMENT_NAME` and `EMBEDDING_ADA_MODEL_API_VERSION`.
 
-### 6. Set the value for the GROUNDING_WITH_BING_CONNECTION_NAME variable
+### 7. Set the value for the GROUNDING_WITH_BING_CONNECTION_NAME variable
 
 #### Go to the Connected Resources section
 
@@ -90,7 +96,7 @@ Complete the prerequisites Lab exercises
 
 - [ ] Copy the "Name" of the "Grounding with Bing Search" connection (Corresponding Target columns is https://api.bing.microsoft.com/) and paste into .env file as the value for GROUNDING_WITH_BING_CONNECTION_NAME
 
-### 7. Set the values for the TENANT_ID, AZURE_RESOURCE_GROUP and AZURE_SUBSCRIPTION_ID variables
+### 8. Set the values for the TENANT_ID, AZURE_RESOURCE_GROUP and AZURE_SUBSCRIPTION_ID variables
 
 - [ ] Go to [https://portal.azure.com](https://portal.azure.com) and sign into the Azure portal with your Azure credentials.
 - [ ] In the top search bar, type **entra id**
@@ -112,7 +118,7 @@ Complete the prerequisites Lab exercises
 - [ ] Copy the Subscription ID as shown in the screenshot and paste it into the `.env` file as the value for `AZURE_SUBSCRIPTION_ID`.
 ![Go to project](images/sub1.png)
 
-### 8. Set the values for the AZURE_AI_SEARCH_ENDPOINT and AZURE_AI_SEARCH_API_KEY variables
+### 9. Set the values for the AZURE_AI_SEARCH_ENDPOINT and AZURE_AI_SEARCH_API_KEY variables
 
 - [ ] In the top search bar, type **ai search**
 - [ ] Select **AI Search** from the search results
@@ -126,7 +132,7 @@ Complete the prerequisites Lab exercises
 - [ ] Copy the key as shown in the screenshot for this Lab, and paste into .env file as the value for AZURE_AI_SEARCH_API_KEY
   ![Go to project](images/aisearchapikey.png)
 
-### 9. Set the values for the COSMOS_ENDPOINT and COSMOS_KEY variables
+### 10. Set the values for the COSMOS_ENDPOINT and COSMOS_KEY variables
 
 - [ ] In the top search bar, type **cosmos**
 - [ ] Select **Azure Cosmos DB** from the search results
@@ -137,7 +143,7 @@ Complete the prerequisites Lab exercises
 - [ ] Toggle the eye icon at the far right of **PRIMARY KEY**, Copy the key and paste into .env file as the value for COSMOS_KEY
 ![Go to project](images/cosmos_ep_key.png)
 
-### 10. Set the value for the SQL_SERVER variable
+### 11. Set the value for the SQL_SERVER variable
 
 - [ ] In the top search bar, type **sql**
 - [ ] Select **SQL Servers** from the search results
@@ -147,7 +153,7 @@ Complete the prerequisites Lab exercises
 - [ ] Open `C:\Users\Admin\Desktop\LABS\sqlcredentials.txt` and copy the provided SQL password into `.env` as the value for `SQL_PWD`. Do not copy the password into the lab instructions.
 ![Go to project](images/sqlserver.png)
 
-### 11. Set additional Microsoft Foundry Values (for Advance Fine-Tuning Lab)
+### 12. Set additional Microsoft Foundry Values (for Advance Fine-Tuning Lab)
 
 - [ ] Go to your Microsoft Foundry resource in the Azure portal
 - [ ] In the **Overview** section, copy and save the following values:

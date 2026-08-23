@@ -11,6 +11,7 @@ In this lab we will deploy the following models:
 - text-embedding-3-large
 - GPT-5.1
 - GPT-5-mini	
+- GPT-4o
 - text-embedding-ada-002
 
 ## Estimated Time 
@@ -62,11 +63,16 @@ Make sure you are using the legacy Microsoft Foundry UI.
 
 - [ ] Repeat the steps above to deploy the +++**gpt-5-mini**+++ model.
 
-### 4. Deploy embedding model
+### 4. Deploy gpt-4o model
+
+- [ ] Repeat the steps above to deploy the +++**gpt-4o**+++ model.
+- [ ] This deployment is required later in the workshop (Lab 02 Bing grounding and Lab 06 Prompt Engineering) because **Grounding with Bing Search does not support GPT-5 models**, and it is also used for the temperature-based prompting exercises. Keep the deployment name as the default suggested by the portal (typically `gpt-4o`) unless you have a specific reason to rename it.
+
+### 5. Deploy embedding model
 
 - [ ] Repeat the steps above to deploy the +++**text-embedding-3-large**+++ model.
 
-### 5. Deploy text-embedding-ada-002 model
+### 6. Deploy text-embedding-ada-002 model
 
 - [ ] Repeat the steps above to deploy the +++**text-embedding-ada-002**+++ model.
 

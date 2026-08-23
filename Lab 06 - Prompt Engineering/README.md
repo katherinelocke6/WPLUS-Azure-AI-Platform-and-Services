@@ -21,8 +21,10 @@ In this lab we will:
 ## Scenario
 Learn Prompt Engineering Techniques to optimize interactions with language models and achieve more accurate, relevant, and consistent results.
 
+> ⚠️ **Note: this lab uses the `gpt-4o` deployment, not the shared `gpt-5.1`/`gpt-5-mini` deployment.** This lab's notebook uses explicit `temperature` values to teach how temperature affects model output. Lab 00's shared `MODEL_DEPLOYMENT_NAME` (gpt-5.1 / gpt-5-mini) is a GPT-5-family reasoning-oriented model, and Azure OpenAI reasoning-class models are known to reject non-default `temperature` values. To keep the temperature examples working, this notebook instead reads the `PROMPT_MODEL_DEPLOYMENT_NAME` environment variable, which should point to the `gpt-4o` model deployed in Lab 00. See [Lab 00 - Deploy Models](../Lab%2000%20-%20Prequisite%20-%20AI%20Foundry%20Resource%20Creation/02-Deploy-Models.md) and [Lab 00 - Setup .env file](../Lab%2000%20-%20Prequisite%20-%20AI%20Foundry%20Resource%20Creation/05-Setup-(dot)env-file.md) for setup instructions.
+
 ## Pre-requisites
-- Completed the pre-requisites labs
+- Completed the pre-requisites labs, including the `gpt-4o` model deployment and `PROMPT_MODEL_DEPLOYMENT_NAME` value in `.env` (see Lab 00)
 - Basic knowledge of AI and language models
 - Completion of Lab 1 and Lab 2 (recommended)
 - Access to Azure AI Foundry and Azure OpenAI Service

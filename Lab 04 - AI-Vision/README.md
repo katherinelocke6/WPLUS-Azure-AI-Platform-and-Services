@@ -141,7 +141,7 @@ The Image Analysis API provides capabilities including:
 
 ---
 
-## Exercise 5: Video Indexer via API
+## Exercise 5: Video Indexer via API — *Not currently executable in this workshop environment*
 
 Azure AI Video Indexer is a cloud-based service that extracts insights from videos using AI models for speech, vision, and natural language processing. The service is **actively supported** with no announced retirement date.
 
@@ -153,6 +153,6 @@ The Video Indexer API enables you to:
 - Generate transcriptions, captions, and multi-modal video summaries
 - Perform face redaction and object detection
 
-**Hands-on exercise:** Open the notebook at [`LabFiles/AI_vision_services_lab.ipynb`](./LabFiles/AI_vision_services_lab.ipynb) and complete **Section 08 - Video Indexer** to upload and index a video via the API.
+> ⚠️ **This exercise cannot currently be completed as supplied.** The notebook only loads placeholder variables (`VIDEO_INDEXER_ACCOUNT_ID`, `VIDEO_INDEXER_LOCATION`, `VIDEO_INDEXER_TOKEN`); it does not contain a Video Indexer upload/index section, no `.env.example` entries exist for these variables, no instructions are provided anywhere in this workshop for provisioning a Video Indexer account or generating an access token, and no sample video file is supplied in `LabFiles/`. Treat this exercise as **optional/for reference only** until these gaps are addressed — do not expect a "Section 08 - Video Indexer" to exist in the notebook, and do not attempt to supply your own credentials or video file to force it to run. This is a known gap in the authored workshop content, not a step you are missing.
 
 ---
