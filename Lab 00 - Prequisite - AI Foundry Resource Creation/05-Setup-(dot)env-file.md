@@ -60,7 +60,7 @@ Complete the prerequisites Lab exercises
 - [ ] Right click on each name to open in a new browser tab and to get details
 ![Go to project](images/modelapikey1.png)
 
-- [ ] As shown in the screenshot Copy Endpoint Target URI and paste into .env file as the value for AZURE_OPENAI_ENDPOINT
+- [ ] As shown in the screenshot, copy the Endpoint Target URI and paste it into `.env` as the value for `AZURE_OPENAI_ENDPOINT`.
 - [ ] Copy the Model Name and Key and paste into .env file as the value for MODEL_DEPLOYMENT_NAME and AZURE_OPENAI_API_KEY respectively.
 ![Go to project](images/modelapikey2.png)
   - The Model Name is the first box string.
@@ -73,12 +73,12 @@ Complete the prerequisites Lab exercises
 
 - [ ] Similar steps as above. Follow for both text-embedding-3-large and text-embedding-ada-002 models
 - [ ] Click on embeddding model name to get details
-- [ ] As shown in the screenshot Copy Endpoint Target URI and paste into .env file as the value for AZURE_OPENAI_ENDPOINT
-- [ ] Copy Key and paste into .env file as the value for AZURE_OPENAI_EMBEDDING_API_KEY
+- [ ] For **text-embedding-3-large**, copy the Endpoint Target URI into `AZURE_OPENAI_EMBEDDING_ENDPOINT`. For **text-embedding-ada-002**, copy the Endpoint Target URI into `AZURE_OPENAI_EMBEDDING_ADA_ENDPOINT`.
+- [ ] For **text-embedding-3-large**, copy the key into `AZURE_OPENAI_EMBEDDING_API_KEY`. For **text-embedding-ada-002**, copy the key into `AZURE_OPENAI_EMBEDDING_ADA_API_KEY`.
 ![Go to project](images/modelapikey2e.png)
 
-- [ ] The Endpoint Target URI is in the form of https://_AI-FOUNDRY-NAME_.cognitiveservices.azure.com/openai/deployments/_MODEL-DEPLOYMENT-NAME_/chat/completions?api-version=_MODEL-API-VERSION_
-- [ ] Copy corresponding string from the URI and paste into .env file as the value for EMBEDDING_MODEL_DEPLOYMENT_NAME and EMBEDDING_MODEL_API_VERSION
+- [ ] Embedding Endpoint Target URIs use the Azure OpenAI embeddings route, for example `https://<resource>/openai/deployments/<deployment-name>/embeddings?api-version=<api-version>`. Do not use the `/chat/completions` route for an embedding model.
+- [ ] For **text-embedding-3-large**, set `EMBEDDING_MODEL_DEPLOYMENT_NAME` and `EMBEDDING_MODEL_API_VERSION`. For **text-embedding-ada-002**, set `EMBEDDING_ADA_MODEL_DEPLOYMENT_NAME` and `EMBEDDING_ADA_MODEL_API_VERSION`.
 
 ### 6. Set the value for the GROUNDING_WITH_BING_CONNECTION_NAME variable
 
@@ -109,7 +109,7 @@ Complete the prerequisites Lab exercises
 ![Go to project](images/rg2.png)
 
 - [ ] Click the resource group name to go to the next page and Overview section
-- [ ] Copy the Subscription ID as shown in the screeshot and paste into .env file as the value for
+- [ ] Copy the Subscription ID as shown in the screenshot and paste it into the `.env` file as the value for `AZURE_SUBSCRIPTION_ID`.
 ![Go to project](images/sub1.png)
 
 ### 8. Set the values for the AZURE_AI_SEARCH_ENDPOINT and AZURE_AI_SEARCH_API_KEY variables
@@ -143,7 +143,8 @@ Complete the prerequisites Lab exercises
 - [ ] Select **SQL Servers** from the search results
 - [ ] You will see the SQL Server that you have created (eg sqlserver-53439517)
 - [ ] Click on the name
-- [ ] Next screen, in the **Overview** section, Copy **Server Name** and paste into .env file as the value for SQL_SERVER
+- [ ] Next screen, in the **Overview** section, copy **Server Name** and paste it into `.env` as the value for `SQL_SERVER`.
+- [ ] Open `C:\Users\Admin\Desktop\LABS\sqlcredentials.txt` and copy the provided SQL password into `.env` as the value for `SQL_PWD`. Do not copy the password into the lab instructions.
 ![Go to project](images/sqlserver.png)
 
 ### 11. Set additional Microsoft Foundry Values (for Advance Fine-Tuning Lab)

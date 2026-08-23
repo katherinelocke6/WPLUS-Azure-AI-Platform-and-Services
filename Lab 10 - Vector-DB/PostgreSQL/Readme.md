@@ -14,7 +14,7 @@ Perform similarity searches using PostgreSQL.
 You want to use PostgreSQL for your AI application's backend and need to store and search vectors efficiently. This lab will walk you through the necessary steps.
  
 ## Pre-requisites
-None. The Azure PostgreSQL server has been pre-created for you.
+Complete the **Lab 00 - Pre-requisites** first, including the `.env` setup and requirements installation. The Azure Database for PostgreSQL server itself has been pre-created for you.
  
 ## Tasks
 ## Part 1 – Enable Vector Search Extensions in PostgreSQL
@@ -104,7 +104,7 @@ pg_restore -h pgaivector-<server-id>.postgres.database.azure.com -U postgres -d 
    - [ ] Port: `5432`
    - [ ] Maintenance DB: `postgres`
    - [ ] Username: `postgres`
-   - [ ] Password: `Password12345!!`
+   - [ ] Password: Use the password supplied in `C:\Users\Admin\Desktop\LABS\sqlcredentials.txt`.
    - [ ] Save.
 
 ![Enter Server Info](images/9_PGServerInfo.png)

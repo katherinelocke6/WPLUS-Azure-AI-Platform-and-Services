@@ -14,7 +14,7 @@ Perform similarity searches using Cosmos DB.
 You are building a retail application that needs to support flexible search across product catalog. You will leverage Cosmos DB to store product data as well as power the search experience, without needing to rely on external search engine.
  
 ## Pre-requisites
-None. The database has been pre-created for you.
+Complete the **Lab 00 - Pre-requisites** first, including **Setup .env file** and **Run requirements file to install the relevant packages**. The Cosmos DB resource itself has been pre-created for you.
  
 ## Tasks
 Open **Python-Samples.ipynb** and follow the steps to ingest data and run search queries.

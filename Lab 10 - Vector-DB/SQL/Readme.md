@@ -14,10 +14,10 @@ Perform similarity searches using Azure SQL Database.
 You need a relational database solution (SQL DB) that also supports storing and querying AI vector data. This lab guides you through the process, step by step.
  
 ## Pre-requisites
-None. The database has been pre-created for you.
+Complete the **Lab 00 - Pre-requisites** first, including the `.env` setup and requirements installation. The Azure SQL Database itself has been pre-created for you.
  
 ## Tasks
-Execute files in [SQL folder](https://github.com/Azure/WPLUS-Azure-AI-Platform-and-Services/tree/AugRelease/Lab%2010%20-%20Vector-DB/SQL) in ascending order. Files are numberd 1_.... , 2_.... etc. The .sql files need to be executed in SQL Server Management Studio (SSMS), which you can find via the Start Menu on the lab VM (it is not pinned to the Desktop), while .py files are executed with "python file.py" - for example "python 2_LoadMovideData.py" (the previous assumes you have nagivated to the directory containing the Python file).
+Use the files supplied locally in `C:\Users\Admin\Desktop\LABS\Lab 10 - Vector-DB\SQL`. Work through the numbered files in ascending order. Execute `.sql` files in SQL Server Management Studio (SSMS), which is available from the Start Menu on the lab VM. Execute `.py` files from a terminal while working in the SQL lab directory, for example `python 2_LoadMovieData.py`.
 
 
 # Lab: Using Vector Databases in Azure SQL Database
