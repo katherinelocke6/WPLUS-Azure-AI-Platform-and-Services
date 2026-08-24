@@ -20,8 +20,14 @@ You should expect to spend about 30-45 minutes running the notebook. Execution t
 
 1. [ ] Install the required packages:
 
+   > **Note:** `azure-ai-evaluation` versions before 1.11.1 combined with duckdb 1.4.0 raise
+   > `TypeError: unhashable type: '_duckdb.typing.DuckDBPyType'` during RedTeam evaluation,
+   > silently skipping every conversation while still reporting a 0.0% ASR. Version 1.11.1
+   > fixed this by pinning duckdb to 1.3.2 for the `[redteam]` extra. Use `--upgrade` so this
+   > install works even if an older `azure-ai-evaluation` is already present in your environment.
+
    ```bash
-   pip install azure-ai-evaluation[redteam]
+   pip install --upgrade "azure-ai-evaluation[redteam]>=1.11.1"
    ```
 
 2. [ ] Set up your environment variables:

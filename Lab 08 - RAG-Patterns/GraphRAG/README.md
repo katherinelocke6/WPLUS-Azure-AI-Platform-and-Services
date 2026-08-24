@@ -69,6 +69,18 @@ graphrag init --root ragtest
 find ./ragtest
 ```
 
+`graphrag init` runs interactively and will prompt you for two values before it writes `settings.yaml`:
+
+```
+Specify the default chat model to use [...]
+Specify the default embedding model to use [...]
+```
+
+Enter the models you deployed in the Lab 00 pre-requisites:
+
+- Default chat model: `gpt-5-mini`
+- Default embedding model: `text-embedding-ada-002`
+
 Expected files:
 
 - `settings.yaml`
@@ -97,10 +109,10 @@ sed -i '/^GRAPHRAG_API_KEY=/d' ragtest/.env \
 
 ### Update settings.yaml
 
-1. [ ] Copy, update (with Azure OpenAI endpoint instance), and execute the following command in Cloud Shell.
+1. [ ] Copy, update (with Azure OpenAI endpoint instance), and execute the following command in Cloud Shell. The value **must** include the `https://` scheme — `settings.yaml`'s `api_base` requires a complete URL, not just the hostname.
 
 ```bash
-export AZURE_OPENAI_ENDPOINT=<instance>.openai.azure.com
+export AZURE_OPENAI_ENDPOINT=https://<instance>.openai.azure.com
 ```
 
 2. [ ] Then run the following in Cloudshell
@@ -143,7 +155,7 @@ ls ./ragtest/output
 graphrag query \
   --root ./ragtest \
   --method global \
-  --query "What are the top themes in this story?"
+  "What are the top themes in this story?"
 ```
 
 #### Local Query
@@ -152,7 +164,7 @@ graphrag query \
 graphrag query \
   --root ./ragtest \
   --method local \
-  --query "Who is Scrooge and what are his main relationships?"
+  "Who is Scrooge and what are his main relationships?"
 
 ```
 
@@ -198,6 +210,6 @@ more ragtest/prompts-tuned/summarize_descriptions.txt
 # graphrag query \
 #  --root ./ragtest \
 #  --method global \
-#  --query "What are the top themes in this story?"
+#  "What are the top themes in this story?"
 
 ```
